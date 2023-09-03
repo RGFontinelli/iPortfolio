@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var nome = window.prompt("Qual é o seu nome?");//armazenando o nome digitado pelo usuário em uma variavel.
+    var sobrenome = window.prompt("Agora digite seu sobrenome: ");
+    window.alert("O seu nome é: " + nome.toLocaleUpperCase() + " " + sobrenome.toUpperCase());//toLocaleUpperCase deixa o nome e o sobrenome em caixa alta. LocaleUppercase e Uppercase are similar.
+    //Tudo o que digitamos na alertBox o código entende como uma string, para casos com número, precisamos indicar que a variável será um número, então usamos Number.parseInt ou parseFloat.
+    var numero1 = Number.parseFloat(window.prompt("Digite o primeiro número da soma: "));//Armazenando os números da soma
+    var numero2 = Number.parseFloat(window.prompt("Digite o segundo número da soma: "));
+    var resultado = numero1 + numero2; //atribuindo o resultado da soma a uma variavel.
+    alert("O resultado da soma é: " + resultado);//Abrindo o resultado da soma na box de alert. Outro ponto é que podemos colocar somente o alert que o html vai entender.
+</script>
+</html>

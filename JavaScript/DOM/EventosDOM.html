@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventosDOM</title>
+</head>
+<body>
+    <p>Clique no botão</p><!--Adicionando um texto-->
+    <form><!--inserindo o botão através de formulário-->
+        <input type = "button" onclick="exemploEvento()" value = "Chamando a funcao"/><!--type mostra o tipo de formulario que sera um botao, e o onclick é quando clicar vai chamar a funcão abaixo, value é o nome do botão-->
+    </form>
+    <h1 id = "exemplo" onmouseover="passandoOMouse()" onmouseout="tirarmouse()">Troca de texto</h1><!--Comando para quando passar o mouse em cima desse id trocar para o texto indicado na funcao passandoOMouse e com o mouse fora mudar para tirarmouse-->
+</body>
+<script>
+//Um evento é uma interação entre JavaScript e HTML que ocorre quando o usuário ou navegador manipulam uma página. Ex: carregar a página, clicar em um botão, pressionar alguma tecla, etc.
+    function exemploEvento(){//adicionando uma funcao que vai ser chamada no body do html quando o usuário clicar num botão.
+        alert("Mostrando alert");
+    }
+    function passandoOMouse(){
+        document.getElementById("exemplo").innerHTML = "Evento com o mouse over"//quando passar o mouse em cima do texto muda para esse indicado nessa linha
+    }
+    function tirarmouse(){
+        document.getElementById("exemplo").innerHTML = "Evento com o mouse out"//com o mouse fora muda para esse.
+    }
+</script>
+</html>

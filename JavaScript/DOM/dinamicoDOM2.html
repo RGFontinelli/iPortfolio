@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times de futebol</title>
+</head>
+<body>
+    <ul class = "listaTimes">
+
+    </ul>
+</body>
+<script>
+//inserindo uma lista de times com a borda azul na class "listaTimes"
+    times = ["Athletico", "Coritiba", "Corithians"];//array
+    var listadetimes = document.querySelector('ul.listaTimes');//selecionando a class listaTimes para inserir na variavel
+
+    for (var i = 0; i < times.length; i++){//executando um for para cada elemento da array
+        var time = times[i];
+        var listItem = document.createElement('li');
+        listItem.innerText = time;//adicionando o nome do time de acordo com a posição i da array.
+        listItem.style.border = '1px solid blue';//adicionando a borda
+        listadetimes.appendChild(listItem);
+
+    }
+</script>
+</html>

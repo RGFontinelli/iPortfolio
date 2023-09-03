@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegando valor de formulario</title>
+</head>
+<body>
+    <form>
+        <label>Email</label>
+        <input type = "email" id = "email"/>
+
+        <label>Nome</label>
+        <input type = "text" id = "nome"/>
+
+        <button type = "submit" onclick="novoNome()">Cadastrar</button>
+    </form>
+    <script>
+        function novoNome(){
+            var campoNome = document.getElementById("nome")
+            alert("Seu nome é: " + campoNome.value);//Armazenando o que foi informado no campo nome.
+        }
+        function novoEmail(){
+            var campoEmail = document.getElementById("email")
+            alert("Seu email é: " + campoEmail.value);//Armazenando o que foi informado no campo email.
+        }
+    </script>
+</body>
+</html>

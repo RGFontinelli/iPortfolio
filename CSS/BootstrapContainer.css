@@ -1,0 +1,20 @@
+
+h1{/*atribuindo tamanho de fonte e cor ao texto do cabeçalho h1 no html*/
+    font-size: 55px;
+    color: white;
+    padding: 15px;/*delimita o texto para dentro da margem, o contrario line height que delimita para fora*/
+    text-align: center;/*centraliza o texto*/
+}
+
+h2{/*estilizando o subtítulo h2 do HTML*/
+    font-size: 24px;
+    text-transform: uppercase;/*deixa o texto todo maíusculo*/
+    color: #303030;
+    font-weight: 600;
+}
+
+.carousel-caption h5{/*selecionando os elementos h5 do carousel*/
+    font-size: 40px;
+    color: rgb(255, 241, 47);
+    text-shadow: 1px 1px 1px black;
+}
